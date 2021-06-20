@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header{
+    width: 100%;
+    height: 15rem;
+    background-image: url(./Images/img02zd8w278.jpg);
+    background-size: cover;
+    background-position-y: -7rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+   
+}
+
+header .overlay{
+    height: 15rem;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    
+}
+
+header .overlay .bar{
+    display: inline;
+    float: right;
+    height: 2rem;
+    padding-top:1rem;
+
+}
+
+header  .overlay .bar a{
+    margin: 2rem 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+header .overlay .ingredient .made-by{
+    display: inline;
+    margin: 0rem 0rem 0rem 1.5rem;   
+    width: 25%;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .overlay .ingredient h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 0rem;
+}
+
+header .overlay .ingredient .slogan{
+    display: flex;
+    justify-content: center;
+    color: rgba(200,200,200,0.5);
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+}
+
+header .overlay .ingredient .welcome{
+    margin-top: 1.5rem;
+}
+
+
+.info-social{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+    border-bottom: 0.1rem solid #bbb;
+    position: relative;
+}
+
+.info-social a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    left: 14rem;
+    top: 1rem;
+    position: absolute;
+}
+
+.container .avt-info {
+    width: 9rem;
+    height: 9rem;
+    background-image: url(./Images/145841761_1268174653564067_3846151258703623463_n.jpg);
+    background-size: cover;
+    background-position:center ;
+    position: absolute;
+    border-radius: 4.5rem;
+    border : 3px solid #ccc;
+    left:20rem;
+    top: 12.5rem;
+}
