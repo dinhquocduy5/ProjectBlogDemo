@@ -90,14 +90,44 @@ header .overlay .ingredient .welcome{
 }
 
 .info-social a{
+    float: left;
+    width: 50%;
     text-decoration: none;
     font-weight: bold;
     color: #aaa;
     text-transform: uppercase;
     font-size: 1.5rem;
-    left: 14rem;
     top: 1rem;
-    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: center
+}
+
+.info-social .icon{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    top: -0.5rem;
+    
+}
+
+.info-social .icon a{
+    position: relative;
+    padding: 0rem 1rem;
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+.info-social .icon a img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.info-social a img:hover{
+    transform: translate(0.1rem,-0.1rem);
+    transition: 200ms;
 }
 
 .container .avt-info {
@@ -109,6 +139,5 @@ header .overlay .ingredient .welcome{
     position: absolute;
     border-radius: 4.5rem;
     border : 3px solid #ccc;
-    left:20rem;
     top: 12.5rem;
 }
