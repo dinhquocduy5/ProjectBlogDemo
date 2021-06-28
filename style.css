@@ -8,11 +8,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #383D3B;
     }
     
     .container{
-        max-width: 80%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -202,7 +201,11 @@
     .wrapper .side-bar .bio .h4{
         display: flex;
         justify-content: center;
-        margin:1.5rem auto;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
         width: 80%;
         font-family: 'Viaoda Libre', cursive;
     }
@@ -225,7 +228,7 @@
         margin-bottom: 1rem;
     }
     
-    .side-bar .about-us{
+    .side-bar .about-me {
         width: 100%;
         height: auto;
         border: 2px solid #bbb;
@@ -235,7 +238,8 @@
         align-items: center;
     }
 
-    .side-bar .about-us .title{
+    .side-bar .about-me .title
+    {
         display: flex;
         justify-content: center;
         margin-top: 1rem;
@@ -244,7 +248,7 @@
         position: relative;
     }
 
-    .side-bar .about-us .title::after{
+    .side-bar .about-me .title::after{
         position: absolute;
         width: 60px;
         height: 3px;
@@ -254,7 +258,7 @@
         left: calc(50% - 30px);
     }
     
-    .side-bar .about-us .img{
+    .side-bar .about-me .img{
         margin: 1rem auto;
         background-image: url(./Images/profile.jpg);
         background-position:center;
@@ -264,7 +268,55 @@
         
     }
 
-    .side-bar .about-us .intro{
+    .side-bar .about-me .intro{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        color: #aaa;
+    }
+
+    .side-bar .popular-post {
+        width: 100%;
+        height: auto;
+        border: 2px solid #bbb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-bar .popular-post  .title
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        width:80%;
+        border-bottom: 1px solid #383D3B;
+        position: relative;
+    }
+
+    .side-bar .popular-post  .title::after{
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: #ffcc6a;
+        bottom: -2px;
+        content: "";
+        left: calc(50% - 30px);
+    }
+    
+    .side-bar .popular-post  .img{
+        margin: 1rem auto;
+        background-image: url(./Images/mustang.jpg);
+        background-position:center;
+        width:257px;
+        height: 356px;
+        background-size: cover;
+        
+    }
+
+    .side-bar .popular-post  .intro{
         padding-left: 1rem;
         padding-right: 1rem;
         text-align: justify;
@@ -335,17 +387,32 @@
     
     footer{
         height: 300px;
-        background-color: #aaa;
+        background-color: #000;
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+    }
+
+    footer .maps-right #map{
+        
+        height: 80%;
+        width: 90%;
+    }
+
+    footer .contact-left{
+        width: 50%;
+        float: left;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
-    footer #map{
-        float: left;
-        margin-left: 3rem;
-        height: 60%;
-        width: 33%;
+    footer .maps-right{
+        color:#fff ;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
